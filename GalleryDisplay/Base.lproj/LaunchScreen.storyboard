@@ -4,7 +4,6 @@
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
-        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -16,20 +15,19 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Designed by Ugozeal" textAlignment="center" lineBreakMode="characterWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9qC-0Q-UVX">
-                                <rect key="frame" x="25" y="406" width="364" height="84"/>
-                                <fontDescription key="fontDescription" name="Zapfino" family="Zapfino" pointSize="25"/>
-                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <color key="highlightedColor" red="0.42745098040000001" green="0.85882352939999995" blue="0.53725490200000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="ebo-o1-L41">
+                                <rect key="frame" x="7" y="248" width="400" height="400"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="400" id="JS4-Ac-D7m"/>
+                                    <constraint firstAttribute="height" constant="400" id="eAx-Wk-o8S"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" red="0.1097869948" green="0.1098136529" blue="0.1097853258" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="9qC-0Q-UVX" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="2sa-Xl-i7I"/>
-                            <constraint firstItem="9qC-0Q-UVX" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="362" id="Wf7-r3-1MC"/>
-                            <constraint firstItem="9qC-0Q-UVX" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="25" id="elc-By-cuL"/>
-                            <constraint firstItem="9qC-0Q-UVX" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="gd4-pN-4Hv"/>
+                            <constraint firstItem="ebo-o1-L41" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="4Km-5l-CFQ"/>
+                            <constraint firstItem="ebo-o1-L41" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="vrQ-gG-qVM"/>
                         </constraints>
                     </view>
                 </viewController>
@@ -39,8 +37,6 @@
         </scene>
     </scenes>
     <resources>
-        <systemColor name="systemBackgroundColor">
-            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
+        <image name="logo" width="600" height="600"/>
     </resources>
 </document>
